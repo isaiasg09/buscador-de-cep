@@ -1,0 +1,59 @@
+body {
+  overflow: hidden;
+  height: 100vh;
+  margin: 0;
+  box-sizing: border-box;
+
+  background: rgb(4,4,50);
+  background: linear-gradient(180deg, rgba(4,4,50,1) 0%, rgba(0,0,0,1) 100%);
+  font-family: 'Outfit';
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.App {
+  width: 80vw;
+  height: 80vh;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.App h1 {
+  font-size: 5rem;
+}
+
+@media (max-width: 1050px) {
+  .App {
+    width: 100vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .App h1 {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 460px) {
+  .App h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .App h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-height: 700px) {
+  .App {
+    height: 104vh;
+  }
+}
