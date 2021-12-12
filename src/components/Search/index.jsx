@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import toast from 'react-hot-toast';
 
 import { RiSearchLine } from 'react-icons/ri';
 
@@ -14,7 +15,12 @@ function Search(props) {
   }
 
   async function pushCep() {
-    await props.cep(input);
+    if(!input) {
+      toast.error('Nenhum CEP inserido!');
+    } else {
+      await props.cep(input);
+
+    }
   }
   
   return (

@@ -11,7 +11,7 @@ import Info from './components/Info';
 function App() {
   const [data, setData] = useState();
 
-  function pullCep(cep){
+  function pullCep(cep) {
     getData(cep);
   }
 
