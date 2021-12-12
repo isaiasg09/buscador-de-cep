@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import toast, { Toaster } from 'react-hot-toast';
+import { Animated } from 'react-animated-css';
 
 import './styles/global.css';
 
@@ -32,7 +33,9 @@ function App() {
     <div className="App">
       <Toaster />
 
-      <h1>Buscador CEP</h1>
+      <Animated animationIn='bounceIn'>
+        <h1>Buscador CEP</h1>
+      </Animated>
 
       <Search cep={pullCep}/>
 
